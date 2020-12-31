@@ -22,7 +22,7 @@ $ java ForwardServer --handshakeport=2206 --usercert=server.pem--cacert=ca.pem -
 ```
 To run the client, use the following command:
 ```
-$ java ForwardClient --handshakehost=portfw.kth.se --handshakeport=2206 --proxyport=9999 --targethost=server.kth.se --targetport=6789 --usercert=client.pem --cacert=ca.pem --key=client-private.der
+$ java ForwardClient --handshakehost=localhost --handshakeport=2206 --proxyport=9999 --targethost=localhost --targetport=6789 --usercert=client.pem --cacert=ca.pem --key=client-private.der
 ```
 
 The forwarder can then be tested using netcat, with the following commands:
